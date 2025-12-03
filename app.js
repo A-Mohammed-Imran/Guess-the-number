@@ -12,15 +12,15 @@ document.querySelector("form").onsubmit = (e) => {
     else {
         document.getElementById("icon").innerHTML = "&#10006";
         document.getElementById("result").innerText = "You Guess the Wrong Number, The Actual Number is " + rnum;
-        if ( Number(val) + 10 > rnum) {
+        if ( Number(val) + 3 > rnum) {
             document.getElementById("message").innerText = "You were ner but the Numer is Higher";
-        } else if (Number(val) - 10 < rnum){
+        } else if (Number(val) - 3 < rnum){
             document.getElementById("message").innerText = "You were ner but the Number is Lower";
         }
     }
 };
 
 const ranNumGen = () => {
-    const num = Math.floor(Math.random() * 100);
+    const num = Math.floor(Math.random() * 10) + 1;
     return num;
 }
