@@ -22,7 +22,12 @@ header {
   text-align: center;
   background-color: #0d1b2a;
   color: white;
-  height: 100px;
+  height: 110px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
 }
 
 section {
@@ -55,7 +60,7 @@ button:hover {
 }
 
 input {
-  height: 25px;
+  height: 40px;
   width: 200px;
   text-align: center;
   border: 3px solid #415a77;
